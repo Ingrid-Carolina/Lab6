@@ -15,6 +15,7 @@ public class Objetos {
     private Color color;
     private String Descripcion;
     private String Marca;
+    private int tama;
     private String calidad;
     private Persona per;
 
@@ -27,6 +28,23 @@ public class Objetos {
         this.Marca = Marca;
         this.calidad = calidad;
         this.per = per;
+    }
+
+    public Objetos(Color color, String Descripcion, String Marca, int tama, String calidad, Persona per) {
+        this.color = color;
+        this.Descripcion = Descripcion;
+        this.Marca = Marca;
+        this.tama = tama;
+        this.calidad = calidad;
+        this.per = per;
+    }
+
+    public int getTama() {
+        return tama;
+    }
+
+    public void setTama(int tama) {
+        this.tama = tama;
     }
 
     public Color getColor() {
@@ -70,8 +88,11 @@ public class Objetos {
     }
 
     @Override
+
+    
     public String toString() {
-        return "Objetos{" + "color=" + color + ", Descripcion=" + Descripcion + ", Marca=" + Marca + ", calidad=" + calidad + ", per=" + per + '}';
+        return "Objetos{" + "color=" + color + ", Descripcion=" + Descripcion + ", Marca=" + Marca + ", tama=" + tama + ", calidad=" + calidad + ", per=" + per + '}';
     }
+    
     
 }

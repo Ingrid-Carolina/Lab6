@@ -1,5 +1,6 @@
 
 import java.awt.Color;
+import java.util.ArrayList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,6 +32,10 @@ public class objetos_hogar extends Objetos{
         this.lugar = lugar;
         this.funcion = funcion;
         this.tiempG = tiempG;
+    }
+
+    objetos_hogar(String text, String text0, String text1, Color color, String text2, String text3, int tam, int cali, ArrayList<Persona> per) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getLugar() {

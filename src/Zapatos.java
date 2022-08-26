@@ -1,5 +1,6 @@
 
 import java.awt.Color;
+import java.util.ArrayList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,6 +32,10 @@ public class Zapatos  extends Objetos{
         this.talla = talla;
         this.suela = suela;
         this.comodidad = comodidad;
+    }
+
+    Zapatos(int talla, String text, int como, Color color, String text0, String text1, int tam, int cali, ArrayList<Persona> per) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getTalla() {
