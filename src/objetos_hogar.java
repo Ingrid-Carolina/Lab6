@@ -14,19 +14,19 @@ import java.awt.Color;
 public class objetos_hogar extends Objetos{
     private String lugar;
     private String funcion;
-    private int tiempG;
+    private String tiempG;
 
     public objetos_hogar() {
         super();
     }
 
-    public objetos_hogar(String lugar, String funcion, int tiempG) {
+    public objetos_hogar(String lugar, String funcion, String tiempG) {
         this.lugar = lugar;
         this.funcion = funcion;
         this.tiempG = tiempG;
     }
 
-    public objetos_hogar(String lugar, String funcion, int tiempG, Color color, String Descripcion, String Marca, String calidad, Persona per) {
+    public objetos_hogar(String lugar, String funcion, String tiempG, Color color, String Descripcion, String Marca, String calidad, Persona per) {
         super(color, Descripcion, Marca, calidad, per);
         this.lugar = lugar;
         this.funcion = funcion;
@@ -49,17 +49,19 @@ public class objetos_hogar extends Objetos{
         this.funcion = funcion;
     }
 
-    public int getTiempG() {
+    public String getTiempG() {
         return tiempG;
     }
 
-    public void setTiempG(int tiempG) {
+    public void setTiempG(String tiempG) {
         this.tiempG = tiempG;
     }
 
     @Override
     public String toString() {
-        return "objetos_hogar{" +super.toString()+"lugar=" + lugar + ", funcion=" + funcion + ", tiempG=" + tiempG + '}';
+        return "objetos_hogar{" + super.toString()+"lugar=" + lugar + ", funcion=" + funcion + ", tiempG=" + tiempG + '}';
     }
+
+    
     
 }
