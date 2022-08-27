@@ -12,27 +12,31 @@ public class Persona_General extends Persona {
     private String ocupacion;
     private String htrabajo;
     private int tiempo;
-    private double sueldo;
+    private int sueldo;
 
     public Persona_General() {
         super();
         
     }
 
-    public Persona_General(String ocupacion, String htrabajo, int tiempo, double sueldo) {
+    public Persona_General(String ocupacion, String htrabajo, int tiempo, int sueldo) {
         this.ocupacion = ocupacion;
         this.htrabajo = htrabajo;
         this.tiempo = tiempo;
         this.sueldo = sueldo;
     }
 
-    public Persona_General(String ocupacion, String htrabajo, int tiempo, double sueldo, String Id, String Nombre, int edad, String sexo, String estado, int altura, int peso) {
+    public Persona_General(String ocupacion, String htrabajo, int tiempo, int sueldo, String Id, String Nombre, int edad, String sexo, String estado, int altura, int peso) {
         super(Id, Nombre, edad, sexo, estado, altura, peso);
         this.ocupacion = ocupacion;
         this.htrabajo = htrabajo;
         this.tiempo = tiempo;
         this.sueldo = sueldo;
     }
+
+    
+
+
 
     public String getOcupacion() {
         return ocupacion;
@@ -62,7 +66,7 @@ public class Persona_General extends Persona {
         return sueldo;
     }
 
-    public void setSueldo(double sueldo) {
+    public void setSueldo(int sueldo) {
         this.sueldo = sueldo;
     }
 
